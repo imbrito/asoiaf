@@ -1,4 +1,4 @@
-.PHONY: build create start stop test run clean
+.PHONY: build start stop test clean
 
 
 build:
@@ -6,11 +6,11 @@ build:
 	docker-compose build
 
 start: build
-	@echo "start a docker container"
+	@echo "start a docker compose services"
 	docker-compose up -d
 
 stop:
-	@echo "stop a docker container"
+	@echo "stop a docker compose services"
 	docker-compose stop
 
 test:
@@ -20,6 +20,6 @@ test:
 	$(MAKE) stop
 
 clean: 
-	@echo "clean a docker image and container"
+	@echo "clean a docker compose services"
 	docker-compose down
 	
