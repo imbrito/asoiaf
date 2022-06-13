@@ -73,9 +73,8 @@ Além disso, ​não​ deverá haver distinção de caixa alta/baixa para consu
 ## Como executar
 
 ```bash
-make create 
 make test
-make run
+make start
 make clean
 ```
 
